@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Criptografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <label for="inputText">Texto:</label>
+    <input type="text" id="inputText" placeholder="Digite o texto" />
+    
+    <label for="operation">Operação:</label>
+    <select id="operation">
+        <option value="encrypt">Criptografar</option>
+        <option value="decrypt">Descriptografar</option>
+    </select>
+
+    <button onclick="processText()">Processar</button>
+
+    <label for="outputText">Resultado:</label>
+    <input type="text" id="outputText" readonly />
+
+    <button onclick="copyToClipboard()">Copiar para Área de Transferência</button>
+
+    <script src="criptografia.js"></script>
+    <script src="interface.js"></script>
+
+</body>
+</html>
+
